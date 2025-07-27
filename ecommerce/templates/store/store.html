@@ -1,45 +1,49 @@
+{% extends 'store/main.html' %}
 {% load static %}
-<!DOCTYPE html>
-<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>E-Commerce Project</title>
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!-- <style>
-            *{
-                box-sizing: border-box;
-                padding: 0px;
-                margin: 0px;
-            }
-            .nav-bar{
-                display: flex;
-                width:100vw;
-                height:40px;
-                background-color: aqua;
-                align-items: center;
-            }
-            .nav-items{
-                display: flex;
-                flex-direction: row;
-                list-style: none;
-            }
-            a{
-                text-decoration: none;
-                color: white;
-                font-size: 1.2.rem;
-                margin-left: 12px;
-            }
-        </style> -->
-    </head>
-    <body>
-        <div class="nav-bar">
-            <ul class="nav-items" >
-                <li><a href="">Store</a></li>
-                <li><a href="">Cart</a></li>
-                <li><a href="">Checkout</a></li>
-            </ul>
-        </div>
-    </body>
+{%block content%}
+<h3>Store Page</h3>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="box-element product">
+                <img class="thumbnail" src="{% static 'images/placeholder.png' %}">
+                <div class="box-element product">
+                    <h6><strong>Product</strong></h6>
+                    <hr>
+                    <button class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+                    <a class="btn btn-outline-success" href="#">View</a>		
+                    <h4 style="display: inline-block; float : right"><strong>$20</strong></h4>
 
-</html>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="box-element product">
+                <img class="thumbnail" src="{% static 'images/placeholder.png' %}">
+                <div class="box-element product">
+                    <h6><strong>Product</strong></h6>
+                    <hr>
+                    <button class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+                    <a class="btn btn-outline-success" href="#">View</a>		
+                    <h4 style="display: inline-block; float : right"><strong>$20</strong></h4>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="box-element product">
+                <img class="thumbnail" src="{% static 'images/placeholder.png' %}">
+                <div class="box-element product">
+                    <h6><strong>Product</strong></h6>
+                    <hr>
+                    <button class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+                    <a class="btn btn-outline-success" href="#">View</a>		
+                    <h4 style="display: inline-block; float : right"><strong>$20</strong></h4>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+{%endblock content%}
